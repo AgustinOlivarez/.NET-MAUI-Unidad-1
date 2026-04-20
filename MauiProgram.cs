@@ -19,6 +19,14 @@ namespace MauiApp1
     		builder.Logging.AddDebug();
 #endif
 
+            builder.Services.AddSingleton<Services.PlayerService>();
+            
+            builder.Services.AddTransient<ViewModels.PlayersViewModel>();
+            builder.Services.AddTransient<Views.PlayersPage>();
+
+            builder.Services.AddTransient<ViewModels.PlayerDetailViewModel>();
+            builder.Services.AddTransient<Views.PlayerDetailPage>();
+
             return builder.Build();
         }
     }

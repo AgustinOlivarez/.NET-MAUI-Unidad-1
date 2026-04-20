@@ -8,8 +8,8 @@
     Title="MauiApp1">
 
     <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate views:MainPage}"
-        Route="MainPage" />
+        Title="Jugadores"
+        ContentTemplate="{DataTemplate views:PlayersPage}"
+        Route="PlayersPage" />
 
 </Shell>
